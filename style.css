@@ -1,0 +1,28 @@
+.notify{
+	width: 100vw;
+	height: 20vh;
+	background: #313031;
+	
+	position: relative;
+}
+.button{
+	width: 80px;
+	height: 20px;
+	background: green;
+	left: 20px;
+	top: 20px;
+}
+
+.line{
+	width: 100%;
+	height: 60px;
+	background: #00FF2F;
+	margin-top: 10px;
+}
+
+
+.count{
+	color: white;
+	height: 15px;
+	padding: 10px 0 20px 10px;
+}
