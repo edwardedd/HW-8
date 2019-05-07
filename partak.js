@@ -1,24 +1,20 @@
 const container = document.querySelector("#timer");
 
-
-
 class Notify{
-		constructor(step, lineWidth, lineTime, nameButton){
-		this.step = step;
-		this.lineWidth = lineWidth;
-		this.lineTime = lineTime;			
-		this.nameButton = nameButton;
-		this.render();
+  constructor(step, lineWidth, lineTime, nameButton){
+  this.step = step;
+  this.lineWidth = lineWidth;
+  this.lineTime = lineTime;			
+  this.nameButton = nameButton;
+  this.render();
 	}
 
-	createCounter(){
-		this.counter = document.createElement("div");
-		this.counter.classList.add("count_text");
-		this.counter.textContent = this.step;
-		return this.counter;
-	}
-
-
+  createCounter(){
+    this.counter = document.createElement("div");
+    this.counter.classList.add("count_text");
+    this.counter.textContent = this.step;
+    return this.counter;
+  }
 
 	createStart(){
 		this.start = document.createElement("button");
@@ -35,7 +31,6 @@ class Notify{
 		this.firstTimer();
 		return this.line;
 	}
-
 
 	minusCount(){
 		this.count = setInterval(()=>{			
@@ -65,7 +60,6 @@ class Notify{
 		}else if(this.start.textContent === 'stop')
 		{this.start.textContent = 'start'};
 	};
-
 
 	firstTimer(){
 		const width = this.line.offsetWidth;

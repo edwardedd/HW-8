@@ -41,7 +41,6 @@ changeName(){
 	}
 	else if(this.btn.textContent === "stop"){
 		this.btn.textContent = "start";
-
 		this.stopNotify();
 		this.stopCount();
 	}
@@ -99,4 +98,4 @@ render(){
 
 }
 new Notify(10,1000,100,'stop')
-new Notify(100,1000,100,'start')
+new Notify(100,1000,100,'stop')
